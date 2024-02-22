@@ -4,7 +4,7 @@
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-
+const sortByDescendingFriendCount = users => users.toSorted( (firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length )
 
 console.log(
   sortByDescendingFriendCount([
@@ -82,14 +82,3 @@ console.log(
 //     gender: "male"
 //   }
 // ]
-
-
-
-
-// На що буде звертати увагу ментор при перевірці:
-
-// Оголошена змінна sortByDescendingFriendCount
-// Змінній sortByDescendingFriendCount присвоєна стрілочна функція з параметром (users)
-// Для перебирання параметра users використаний метод toSorted()
-// Виклик функції із зазначеним масивом users повертає новий масив користувачів, відсортований за спаданням кількості їхніх друзів
-// Виклик функції з випадковими, але валідними аргументами повертає правильне значення
